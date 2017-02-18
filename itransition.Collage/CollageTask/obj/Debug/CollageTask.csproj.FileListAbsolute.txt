@@ -1,0 +1,400 @@
+E:\Projects\C#\CollageTask\CollageTask\bin\ApplicationInsights.config
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\csc.exe
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\vbc.exe
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\VBCSCompiler.exe
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\C#\CollageTask\CollageTask\bin\CollageTask.dll.config
+E:\Projects\C#\CollageTask\CollageTask\bin\CollageTask.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\CollageTask.pdb
+E:\Projects\C#\CollageTask\CollageTask\bin\Antlr3.Runtime.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\EntityFramework.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\EntityFramework.SqlServer.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AI.DependencyCollector.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AI.Web.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AI.WindowsServer.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.ApplicationInsights.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Security.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Google.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Newtonsoft.Json.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Owin.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\System.Web.Helpers.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\System.Web.Mvc.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\System.Web.Optimization.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\System.Web.Razor.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\System.Web.WebPages.Deployment.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\System.Web.WebPages.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\System.Web.WebPages.Razor.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\WebGrease.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AI.DependencyCollector.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AI.Web.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AI.WindowsServer.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.ApplicationInsights.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\System.Web.Helpers.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\System.Web.Mvc.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\System.Web.Optimization.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\System.Web.Razor.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\System.Web.WebPages.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\System.Web.WebPages.Deployment.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\System.Web.WebPages.Razor.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Antlr3.Runtime.pdb
+E:\Projects\C#\CollageTask\CollageTask\bin\Newtonsoft.Json.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\EntityFramework.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\EntityFramework.SqlServer.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Security.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Google.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Projects\C#\CollageTask\CollageTask\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Projects\C#\CollageTask\CollageTask\obj\Debug\CollageTask.dll
+E:\Projects\C#\CollageTask\CollageTask\obj\Debug\CollageTask.pdb
+E:\Projects\C#\CollageTask\CollageTask\bin\CloudinaryDotNet.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\csc.exe.config
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\csc.rsp
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\csi.exe
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\csi.rsp
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\System.AppContext.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\System.IO.FileSystem.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\vbc.exe.config
+E:\Projects\C#\CollageTask\CollageTask\bin\roslyn\vbc.rsp
+E:\Projects\C#\CollageTask\CollageTask\obj\Debug\CollageTask.csprojResolveAssemblyReference.cache
+E:\Projects\C#\CollageTask\CollageTask\obj\Debug\CollageTask.Migrations.InitialCreate.resources
+E:\Projects\C#\CollageTask\CollageTask\obj\Debug\CollageTask.csproj.GenerateResource.Cache
+E:\Projects\C#\CollageTask\CollageTask\obj\Debug\CollageTask.Migrations.MigrateDB.resources
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\ApplicationInsights.config
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\csc.exe
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\csc.exe.config
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\csc.rsp
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\csi.exe
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\csi.rsp
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\System.AppContext.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\System.Collections.Immutable.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\System.IO.FileSystem.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\System.Reflection.Metadata.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\vbc.exe
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\vbc.exe.config
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\vbc.rsp
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\VBCSCompiler.exe
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\roslyn\VBCSCompiler.exe.config
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\CollageTask.dll.config
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\CollageTask.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\CollageTask.pdb
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Antlr3.Runtime.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\CloudinaryDotNet.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\EntityFramework.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\EntityFramework.SqlServer.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AI.DependencyCollector.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AI.Web.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AI.WindowsServer.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.ApplicationInsights.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Security.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Google.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Web.Infrastructure.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Newtonsoft.Json.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Owin.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\System.Web.Helpers.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\System.Web.Mvc.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\System.Web.Optimization.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\System.Web.Razor.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\System.Web.WebPages.Deployment.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\System.Web.WebPages.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\System.Web.WebPages.Razor.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\WebGrease.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Antlr3.Runtime.pdb
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AI.DependencyCollector.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AI.Web.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AI.WindowsServer.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.ApplicationInsights.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Newtonsoft.Json.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\System.Web.Helpers.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\System.Web.Mvc.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\System.Web.Optimization.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\System.Web.Razor.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\System.Web.WebPages.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\System.Web.WebPages.Deployment.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\System.Web.WebPages.Razor.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\EntityFramework.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\EntityFramework.SqlServer.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Security.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Google.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\obj\Debug\CollageTask.csprojResolveAssemblyReference.cache
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\obj\Debug\CollageTask.Migrations.InitialCreate.resources
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\obj\Debug\CollageTask.Migrations.MigrateDB.resources
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\obj\Debug\CollageTask.csproj.GenerateResource.Cache
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\obj\Debug\CollageTask.dll
+E:\Programming\c#\asp.net mvc 5\CollageTask\CollageTask\obj\Debug\CollageTask.pdb
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\ApplicationInsights.config
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\csc.exe
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\csc.exe.config
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\csc.rsp
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\csi.exe
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\csi.rsp
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\System.AppContext.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\vbc.exe
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\vbc.exe.config
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\vbc.rsp
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\VBCSCompiler.exe
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\CollageTask.dll.config
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\CollageTask.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\CollageTask.pdb
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Antlr3.Runtime.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\CloudinaryDotNet.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\EntityFramework.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\EntityFramework.SqlServer.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AI.Web.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Security.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Newtonsoft.Json.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Owin.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\System.Web.Helpers.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\System.Web.Mvc.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\System.Web.Optimization.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\System.Web.Razor.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\System.Web.WebPages.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\System.Web.WebPages.Razor.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\WebGrease.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Antlr3.Runtime.pdb
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AI.Web.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Newtonsoft.Json.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\System.Web.Helpers.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\System.Web.Mvc.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\System.Web.Optimization.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\System.Web.Razor.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\System.Web.WebPages.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\System.Web.WebPages.Razor.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\EntityFramework.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\EntityFramework.SqlServer.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Security.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\obj\Debug\CollageTask.Migrations.InitialCreate.resources
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\obj\Debug\CollageTask.Migrations.MigrateDB.resources
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\obj\Debug\CollageTask.csproj.GenerateResource.Cache
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\obj\Debug\CollageTask.dll
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\obj\Debug\CollageTask.pdb
+C:\Users\Михаил\Downloads\CollageTask 0.97\CollageTask\CollageTask\obj\Debug\CollageTask.csprojResolveAssemblyReference.cache
+E:\Programming\CollageTask\CollageTask\bin\ApplicationInsights.config
+E:\Programming\CollageTask\CollageTask\bin\roslyn\csc.exe
+E:\Programming\CollageTask\CollageTask\bin\roslyn\csc.exe.config
+E:\Programming\CollageTask\CollageTask\bin\roslyn\csc.rsp
+E:\Programming\CollageTask\CollageTask\bin\roslyn\csi.exe
+E:\Programming\CollageTask\CollageTask\bin\roslyn\csi.rsp
+E:\Programming\CollageTask\CollageTask\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Programming\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Programming\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Programming\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Programming\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Programming\CollageTask\CollageTask\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Programming\CollageTask\CollageTask\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Programming\CollageTask\CollageTask\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Programming\CollageTask\CollageTask\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Programming\CollageTask\CollageTask\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Programming\CollageTask\CollageTask\bin\roslyn\System.AppContext.dll
+E:\Programming\CollageTask\CollageTask\bin\roslyn\System.Collections.Immutable.dll
+E:\Programming\CollageTask\CollageTask\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Programming\CollageTask\CollageTask\bin\roslyn\System.IO.FileSystem.dll
+E:\Programming\CollageTask\CollageTask\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Programming\CollageTask\CollageTask\bin\roslyn\System.Reflection.Metadata.dll
+E:\Programming\CollageTask\CollageTask\bin\roslyn\vbc.exe
+E:\Programming\CollageTask\CollageTask\bin\roslyn\vbc.exe.config
+E:\Programming\CollageTask\CollageTask\bin\roslyn\vbc.rsp
+E:\Programming\CollageTask\CollageTask\bin\roslyn\VBCSCompiler.exe
+E:\Programming\CollageTask\CollageTask\bin\roslyn\VBCSCompiler.exe.config
+E:\Programming\CollageTask\CollageTask\bin\CollageTask.dll.config
+E:\Programming\CollageTask\CollageTask\bin\CollageTask.dll
+E:\Programming\CollageTask\CollageTask\bin\CollageTask.pdb
+E:\Programming\CollageTask\CollageTask\bin\Antlr3.Runtime.dll
+E:\Programming\CollageTask\CollageTask\bin\CloudinaryDotNet.dll
+E:\Programming\CollageTask\CollageTask\bin\EntityFramework.dll
+E:\Programming\CollageTask\CollageTask\bin\EntityFramework.SqlServer.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AI.DependencyCollector.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AI.Web.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AI.WindowsServer.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.ApplicationInsights.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Security.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Google.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Web.Infrastructure.dll
+E:\Programming\CollageTask\CollageTask\bin\Newtonsoft.Json.dll
+E:\Programming\CollageTask\CollageTask\bin\Owin.dll
+E:\Programming\CollageTask\CollageTask\bin\System.Web.Helpers.dll
+E:\Programming\CollageTask\CollageTask\bin\System.Web.Mvc.dll
+E:\Programming\CollageTask\CollageTask\bin\System.Web.Optimization.dll
+E:\Programming\CollageTask\CollageTask\bin\System.Web.Razor.dll
+E:\Programming\CollageTask\CollageTask\bin\System.Web.WebPages.Deployment.dll
+E:\Programming\CollageTask\CollageTask\bin\System.Web.WebPages.dll
+E:\Programming\CollageTask\CollageTask\bin\System.Web.WebPages.Razor.dll
+E:\Programming\CollageTask\CollageTask\bin\WebGrease.dll
+E:\Programming\CollageTask\CollageTask\bin\Antlr3.Runtime.pdb
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AI.DependencyCollector.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AI.Web.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AI.WindowsServer.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.ApplicationInsights.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Programming\CollageTask\CollageTask\bin\Newtonsoft.Json.xml
+E:\Programming\CollageTask\CollageTask\bin\System.Web.Helpers.xml
+E:\Programming\CollageTask\CollageTask\bin\System.Web.Mvc.xml
+E:\Programming\CollageTask\CollageTask\bin\System.Web.Optimization.xml
+E:\Programming\CollageTask\CollageTask\bin\System.Web.Razor.xml
+E:\Programming\CollageTask\CollageTask\bin\System.Web.WebPages.xml
+E:\Programming\CollageTask\CollageTask\bin\System.Web.WebPages.Deployment.xml
+E:\Programming\CollageTask\CollageTask\bin\System.Web.WebPages.Razor.xml
+E:\Programming\CollageTask\CollageTask\bin\EntityFramework.xml
+E:\Programming\CollageTask\CollageTask\bin\EntityFramework.SqlServer.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Security.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Google.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Programming\CollageTask\CollageTask\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Programming\CollageTask\CollageTask\obj\Debug\CollageTask.csprojResolveAssemblyReference.cache
+E:\Programming\CollageTask\CollageTask\obj\Debug\CollageTask.Migrations.InitialCreate.resources
+E:\Programming\CollageTask\CollageTask\obj\Debug\CollageTask.Migrations.MigrateDB.resources
+E:\Programming\CollageTask\CollageTask\obj\Debug\CollageTask.csproj.GenerateResource.Cache
+E:\Programming\CollageTask\CollageTask\obj\Debug\CollageTask.dll
+E:\Programming\CollageTask\CollageTask\obj\Debug\CollageTask.pdb

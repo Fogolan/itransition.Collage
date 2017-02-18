@@ -1,0 +1,235 @@
+﻿@model CollageTask.Models.Image
+@{
+    ViewBag.Title = "RedactPhoto";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sabicas Collage! </title>
+    <link rel='stylesheet' href='~/Scripts/Collage/style.css' />
+    <style type="text/css">
+        .canvas-container {
+        display: inline-block;
+        vertical-align: top;  
+    }
+    </style>
+    <script src="~/Scripts/fabric.js"></script>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/dropzonescss")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/scripts/jquery-3.1.1.js")
+    @Scripts.Render("~/scripts/jquery.unobtrusive-ajax.js")
+</head>
+<body id="canvasdemo">
+@using (Html.BeginForm("Create", "Home", FormMethod.Post, new { id = "drawingForm", @style = "width:600px; height:600px; position: relative; float:left;" }))
+{ <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="canvas-container" style="width:600px; height:600px; position:relative; -webkit-user-select:none;  ">
+        <canvas id="c" width="800" height="600" class="lower-canvas" style="position:absolute; width:800px;height:600px; left:0px;top: 0px; -webkit-user-select:none;border:dashed "></canvas>
+        <input type="hidden" name="image" id="image" />
+    </div>
+    <div id="ft">
+        <div id='container'>
+            <fieldset>
+                <span><input type="button" id="btnSave" value="Save" style ="color:black"/></span>
+                <span><input type="button" id="btnCancel" value="Cancel" style ="color:black" /></span>
+            </fieldset>
+        </div>
+        <div id='container'>
+            <fieldset>
+                <h4>Filters:</h4>
+                <span><label><input type="checkbox" id="grayscale"><span> Grayscale</span></label></span>
+                <span><label> <input type="checkbox" id="invert"><span> Invert</span></label></span>
+                <span><label> <input type="checkbox" id="sepia"><span> Sepia</span></label></span>
+                <span><label> <input type="checkbox" id="sepia2"><span> Sepia2</span></label></span>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <span><label> <input type="checkbox" id="brightness"><span> Brightness</span></label>
+                    <input type="range" id="brightness-value" value="100" min="0" max="255" style=""></span>
+                <span><label> <input type="checkbox" id="noise"><span> Noise:</span></label>
+                    <label><input type="range" id="noise-value" value="100" min="0" max="1000"></label></span>
+                <span><label> <input type="checkbox" id="remove-white"><span> Remove white</span></label><br>
+                    <div id="remove-white-ranges">
+                        <label>Threshold: <input type="range" id="remove-white-threshold" value="60" min="0" max="255"></label>
+                        <br>
+                        <label>Distance: <input type="range" id="remove-white-distance" value="10" min="0" max="255"></label>
+                    </div></span>
+            </fieldset>
+        </div>
+        <div id='listing'>
+            <!--<output id="list"></output>-->
+        </div>
+    </div>  
+}
+</body>
+</html>
+    <script type="text/javascript">
+        $(function () {
+            $("#btnSave").click(function () {
+                var form = document.getElementById("drawingForm");
+                var image = document.getElementById("c").toDataURL("image/png");
+                image = image.replace('data:image/png;base64,', '');
+                document.getElementById("image").value = image;
+                form.submit();
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        (function () {
+
+            fabric.Object.prototype.transparentCorners = false;
+            var $ = function (id) { return document.getElementById(id) };
+            $('brightness-value').style.opacity = 0;
+            $('remove-white-ranges').style.opacity = 0;
+            $('noise-value').style.opacity = 0;
+
+
+
+
+            function applyFilter(index, filter) {
+                var obj = canvas.getActiveObject();
+                obj.filters[index] = filter;
+                obj.applyFilters(canvas.renderAll.bind(canvas));
+            }
+
+            function applyFilterValue(index, prop, value) {
+                var obj = canvas.getActiveObject();
+                if (obj.filters[index]) {
+                    obj.filters[index][prop] = value;
+                    obj.applyFilters(canvas.renderAll.bind(canvas));
+                }
+            }
+
+            fabric.Object.prototype.padding = 5;
+            fabric.Object.prototype.transparentCorners = false;
+
+            var canvas = this.__canvas = new fabric.Canvas('c'),
+                f = fabric.Image.filters;
+
+            ////fabric.Image.fromURL('../lib/bg.png', function (img) {
+            ////    canvas.backgroundImage = img;
+            ////    canvas.backgroundImage.width = 600;
+            ////    canvas.backgroundImage.height = 600;
+            ////});
+
+            canvas.on({
+                'object:selected': function () {
+                    fabric.util.toArray(document.getElementsByTagName('input'))
+                                        .forEach(function (el) { el.disabled = false; })
+
+                    var filters = ['grayscale', 'invert', 'remove-white', 'sepia', 'sepia2',
+                                    'brightness', 'noise'];
+
+                    for (var i = 0; i < filters.length; i++) {
+                        $(filters[i]).checked = canvas.getActiveObject().filters[i];
+                    }
+                },
+                'selection:cleared': function () {
+                    fabric.util.toArray(document.getElementsByTagName('input'))
+                                        .forEach(function (el) { el.disabled = true; })
+                }
+            });
+
+            fabric.Image.fromURL("http://res.cloudinary.com/" + "@Model.Path", function (img) {
+
+                var oImg = img.set({ left: 50, top: 100 }).scale(0.9);
+
+                canvas.add(oImg).renderAll();
+                canvas.setActiveObject(oImg);
+
+            }, { crossOrigin: "Anonymous" });
+
+
+            $('btnSave').onclick = function () {
+                canvas.item(0)['hasControls'] = false;
+                canvas.item(0)['hasBorders'] = false;
+                canvas.renderAll();
+            };
+
+            $('grayscale').onclick = function () {
+                applyFilter(0, this.checked && new f.Grayscale());
+            };
+            $('invert').onclick = function () {
+                applyFilter(1, this.checked && new f.Invert());
+            };
+            $('remove-white').onclick = function () {
+
+                if (this.checked) {
+                    $('remove-white-ranges').style.opacity = 1;
+                }
+                else {
+                    $('remove-white-ranges').style.opacity = 0;
+                }
+
+                applyFilter(2, this.checked && new f.RemoveWhite({
+                    threshold: $('remove-white-threshold').value,
+                    distance: $('remove-white-distance').value
+                }));
+            };
+            $('remove-white-threshold').onchange = function () {
+                applyFilterValue(2, 'threshold', this.value);
+            };
+            $('remove-white-distance').onchange = function () {
+                applyFilterValue(2, 'distance', this.value);
+            };
+            $('sepia').onclick = function () {
+                applyFilter(3, this.checked && new f.Sepia());
+            };
+            $('sepia2').onclick = function () {
+                applyFilter(4, this.checked && new f.Sepia2());
+            };
+            $('brightness').onclick = function () {
+                if (this.checked) {
+                    $('brightness-value').style.opacity = 1;
+                }
+                else {
+                    $('brightness-value').style.opacity = 0;
+                }
+                applyFilter(5, this.checked && new f.Brightness({
+                    brightness: parseInt($('brightness-value').value, 10)
+                }));
+            };
+            $('brightness-value').onchange = function () {
+                applyFilterValue(5, 'brightness', parseInt(this.value, 10));
+            };
+            $('noise').onclick = function () {
+
+                if (this.checked) {
+                    $('noise-value').style.opacity = 1;
+                }
+                else {
+                    $('noise-value').style.opacity = 0;
+                }
+
+                applyFilter(6, this.checked && new f.Noise({
+                    noise: parseInt($('noise-value').value, 10)
+                }));
+            };
+            $('noise-value').onchange = function () {
+                applyFilterValue(6, 'noise', parseInt(this.value, 10));
+            };
+
+        })();
+    </script>

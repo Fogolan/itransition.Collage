@@ -1,0 +1,316 @@
+﻿@model CollageTask.Models.Collage
+
+@{
+    ViewBag.Title = "Create Collage";
+}
+<style>
+#canvas-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    box-shadow: 0 0 5px 1px black;
+    margin: 10px auto;
+    border: 5px solid transparent;
+}
+#images img.img_dragging {
+    opacity: 0.4;
+}
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+    cursor: move;
+}
+#win {
+        background: url(~/Content/bg.png);
+        z-index: 99999999;
+        position: absolute;
+        display: none;
+    }
+#images{
+        overflow-x:scroll;
+        height:200px;
+        width: 1280px;
+    }
+</style>
+<script src="~/Scripts/fabric.js"></script>
+@using (Html.BeginForm("CreateCollage", "Home", FormMethod.Post, new { id = "drawingForm" }))
+{
+    <div id="canvas-container" class="canvas-container" style="width:1280px; height:720px; position:relative; -webkit-user-select:none; background-color:white ">
+        <canvas id="canvas" width="1280" height="720"></canvas>
+        <div id='win'>
+            <span>
+                <input id="grayscale" type="checkbox" class="glyphicon glyphicon-picture" style="color:gray" />
+                <input id="sepia2" type="checkbox" class="glyphicon glyphicon-picture" style="color:#704214;" />
+                <input id="invert" type="checkbox" class="glyphicon glyphicon-adjust" style="border-color:black" />
+            </span>
+            <br />
+            <div class="btn-group btn-group-xs">
+                <input type="range" id="change-size" value="3" min="0.7" max="4" step="0.1">
+                <i class="glyphicon glyphicon-chevron-up" id="btnUp" style="color:gray"></i>
+                <i id="btnDown" class="glyphicon glyphicon-chevron-down" style="color:gray;"></i>
+                <i id="btnRemove" class="glyphicon glyphicon-remove" style="color:red;"></i>
+            </div>
+        </div>
+        <input type="hidden" name="imageData" id="imageData" />
+        @Html.Hidden("inputData",Model.JSON,new {name = "inputData" });
+        <span><input type="submit" id="btnSave" value="Create Collage" class="btn btn-primary" />
+              <input type="submit" id="btnCancel" value="Cancel" class="btn btn-primary" /></span>
+    </div><br/><br />
+}
+<div id="images" class="jumbotron">
+    @if (Model.Photos.Count() > 0)
+    {
+        <span>
+            @foreach (var photo in Model.Photos)
+            {
+                <img draggable="true" crossOrigin="Anonymous" src="http://res.cloudinary.com/@photo.Path" style="width:120px; height:120px" />
+            }
+        </span>
+    }
+    else
+    {
+        <h3>Вы не Добавили ни одной фотографии.<a href="@Url.Action("UploadImage", "Home", new { user_id = (string)Session["CurrentUserId"] })">Добавьте хоть ОДНУ фотографию.</a></h3>
+    }
+</div>
+@section scripts{
+<script type="text/javascript">
+    window.onload = function () {
+        var originalHeight;
+        var originalWidth;
+        fabric.Object.prototype.hasBorders = false;
+        fabric.Object.prototype.hasControls = false;
+
+        var canvas = this.__canvas = new fabric.Canvas('canvas'),
+            f = fabric.Image.filters;
+        canvas.on('object:moving', function (e) {
+            var obj = e.target;
+            // if object is too big ignore 
+            if (obj.currentHeight > obj.canvas.height || obj.currentWidth > obj.canvas.width) {
+                return;
+            }
+            obj.setCoords();
+            // top-left corner 
+            if (obj.getBoundingRect().top < 0 || obj.getBoundingRect().left < 0) {
+                obj.top = Math.max(obj.top, obj.top - obj.getBoundingRect().top);
+                obj.left = Math.max(obj.left, obj.left - obj.getBoundingRect().left);
+            }
+            // bot-right corner 
+            if (obj.getBoundingRect().top + obj.getBoundingRect().height > obj.canvas.height || obj.getBoundingRect().left + obj.getBoundingRect().width > obj.canvas.width) {
+                obj.top = Math.min(obj.top, obj.canvas.height - obj.getBoundingRect().height + obj.top - obj.getBoundingRect().top);
+                obj.left = Math.min(obj.left, obj.canvas.width - obj.getBoundingRect().width + obj.left - obj.getBoundingRect().left);
+            }
+            Go();
+        });
+        fabric.Object.prototype.HasBorders = false;
+        fabric.Object.prototype.HasControls = false;
+        var filters = ['grayscale', 'sepia2', 'invert'];
+        canvas.on({
+            'object:selected': function () {
+
+
+                for (var i = 0; i < filters.length; i++) {
+                    $(filters[i]).checked = !!canvas.getActiveObject().filters[i];
+                }
+            }
+        });
+        function handleDragStart(e) {
+            [].forEach.call(images, function (img) {
+                img.classList.remove('img_dragging');
+            });
+            this.classList.add('img_dragging');
+        }
+
+        function handleDragOver(e) {
+            if (e.preventDefault) {
+                e.preventDefault();
+            }
+
+            e.dataTransfer.dropEffect = 'copy';
+
+            return false;
+        }
+        function handleDragEnter(e) {
+            this.classList.add('over');
+
+        }
+
+        function handleDragLeave(e) {
+            this.classList.remove('over');
+        }
+
+        function handleDrop(e) {
+
+            if (e.stopPropagation) {
+                e.stopPropagation();
+            }
+
+            var img = document.querySelector('#images img.img_dragging');
+
+            console.log('event: ', e);
+
+            var newImage = new fabric.Image(img, {
+                width: img.width * 1.5,
+                height: img.height * 1.5,
+                left: e.layerX,
+                top: e.layerY,
+                originX: "center", 
+                originY: "center",
+                zindex: canvas.getObjects().length
+            });
+            newImage.crossOrigin = "anonymous";
+            canvas.add(newImage);
+            return false;
+        }
+
+        function handleDragEnd(e) {
+            [].forEach.call(images, function (img) {
+                img.classList.remove('img_dragging');
+            });
+        }
+
+        if (Modernizr.draganddrop) {
+            var images = document.querySelectorAll('#images img');
+            [].forEach.call(images, function (img) {
+                img.addEventListener('dragstart', handleDragStart, false);
+                img.addEventListener('dragend', handleDragEnd, false);
+            });
+            var canvasContainer = document.getElementById('canvas-container');
+            canvasContainer.addEventListener('dragenter', handleDragEnter, false);
+            canvasContainer.addEventListener('dragover', handleDragOver, false);
+            canvasContainer.addEventListener('dragleave', handleDragLeave, false);
+            canvasContainer.addEventListener('drop', handleDrop, false);
+        } else {
+            alert("This browser doesn't support the HTML5 Drag and Drop API.");
+        }
+        $(function () {
+            $("#btnSave").click(function () {
+                var form = $("#drawingForm");
+                var image = document.getElementById("canvas").toDataURL("image/png");
+                image = image.replace('data:image/png;base64,', '');
+                $("#imageData").val(image);
+                var json = JSON.stringify(canvas);
+                $("#inputData").val(json);
+                form.submit();
+            });
+        });
+        $(function () {
+            $("#btnCancel").click(function () {
+                window.location.replace("/Home/ShowCollages");
+            });
+        });
+
+        var onPanel = false;
+        var onImage = false;
+        var element;
+        $('#win').hover(
+           function () {
+               onPanel = true;
+               Go();
+           },
+           function () {
+               onPanel = false;
+               Go();
+           });
+        function Go() {
+            if (element != null) {
+                var o = document.getElementById('win');
+                if (onImage == true || onPanel == true) {
+                    var pointer = canvas.getPointer(event.e);
+                    var posX = element.left;
+                    var posY = element.top;
+                    $('#win').css({ // назначение координат left и top
+                        left: posX * 0.85 + 'px',
+                        top: posY * 1.1 + 'px'
+                    })
+                    o.style.display = 'block';
+                }
+                if (onImage == false && onPanel == false) {
+                    o.style.display = 'none';
+                }
+                for (var i = 0; i < filters.length; i++) {
+                    if (element.filters[i] != null) {
+                        document.getElementById(filters[i]).checked = element.filters[i];
+                    }
+                    else {
+                        document.getElementById(filters[i]).checked = false;
+                    }
+                }
+                document.getElementById('change-size').value = element.scaleX;
+            }
+        }
+
+        $(function () {
+            $("#btnUp").click(function () {
+                canvas.bringForward(element);
+                canvas.renderAll();
+            });
+        });
+        $(function () {
+            $("#btnDown").click(function () {
+                canvas.sendBackwards(element);
+                canvas.renderAll();
+            });
+        });
+        $(function () {
+            $("#btnRemove").click(function () {
+                canvas.remove(element);
+                canvas.renderAll()
+                onImage = false;
+                onPanel = false;
+                Go();
+            });
+        });
+        canvas.on('mouse:over', function (e) {
+            onImage = true;
+            element = e.target;
+            canvas.setActiveObject(e.target);
+            Go();
+        });
+
+        canvas.on('mouse:out', function (e) {
+            onImage = false;
+            Go();
+            canvas.deactivateAll().renderAll();
+        });
+        function applyFilter(index, filter) {
+            var obj = element;
+            if (element != null) {
+                obj.filters[index] = filter;
+                obj.applyFilters(canvas.renderAll.bind(canvas));
+            }
+        }
+
+        function applyFilterValue(index, prop, value) {
+            var obj = element;
+            if (obj.filters[index] && element != null) {
+                obj.filters[index][prop] = value;
+                obj.applyFilters(canvas.renderAll.bind(canvas));
+            }
+        }
+
+        var isGrayscale = true;
+        var isSepia = true;
+        var isContrast = true;
+        document.getElementById('change-size').oninput = function () {
+            element.scale(parseFloat(this.value)).setCoords();
+            canvas.renderAll();
+        };
+        document.getElementById('grayscale').onclick = function () {
+            applyFilter(0, isGrayscale && new f.Grayscale());
+            isGrayscale = (isGrayscale == false) ? true : false;
+        };
+        document.getElementById('sepia2').onclick = function () {
+            applyFilter(1, isSepia && new f.Sepia2());
+            isSepia = (isSepia == false) ? true : false;
+        };
+        document.getElementById('invert').onclick = function () {
+            applyFilter(2, this.checked && new f.Invert());
+            isContrast = (isContrast == false) ? true : false;
+        };
+    };
+</script>
+}

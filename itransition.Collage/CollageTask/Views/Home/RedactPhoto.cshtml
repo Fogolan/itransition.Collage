@@ -1,0 +1,242 @@
+﻿@model CollageTask.Models.Image
+@{
+    ViewBag.Title = "RedactPhoto";
+}
+<h2>Redact Photo</h2>
+
+
+<style type="text/css">
+    .controls {
+        display: inline-block;
+        background: #fafafa;
+        margin-left: 10px;
+        padding: 15px;
+        border-left: 1px dotted #aaa;
+    }
+
+    .canvas-container {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    input[disabled] {
+        opacity: 0.5;
+    }
+
+    #bd-wrapper {
+        min-width: 1600px;
+        overflow: hidden;
+    }
+</style>
+<script src="~/Scripts/fabric.js"></script>
+<link rel='stylesheet' href='~/Scripts/Collage/style.css' />
+@Styles.Render("~/Content/css")
+<div id="bd-wrapper">
+
+
+
+    @using (Html.BeginForm("Create", "Home", FormMethod.Post, new { id = "drawingForm", @style = "width:600px; height:600px; position: relative; float:left;" }))
+    {
+        <div class="canvas-container" style="width:600px; height:600px; position:relative; -webkit-user-select:none; background-color:white ">
+            <input type="hidden" name="imageData" id="imageData" />
+            <canvas id="c" width="600" height="600" class="lower-canvas" style="position:absolute; width:600px;height:600px; left:0px;top: 0px; -webkit-user-select:none;border:dashed "></canvas>
+        </div>
+    }
+    <div id="ft">
+        <h5>Drag picture around in the desired placement. To resize or rotate images, grab corners to desired angle and size. When finished click 'Save'</h5>
+        <div id='container'>
+            <fieldset>
+                <span><input type="button" id="btnSave" value="Save" style="color:black" /></span>
+                <span><input type="button" id="btnCancel" value="Cancel" style="color:black" /></span>
+            </fieldset>
+        </div>
+        <div id='container'>
+            <fieldset>
+                <label><input type="checkbox" id="grayscale" disabled><span> Grayscale</span></label>
+                <label> <input type="checkbox" id="invert" disabled><span> Invert</span></label>
+                <label> <input type="checkbox" id="sepia" disabled><span> Sepia</span></label>
+                <label> <input type="checkbox" id="sepia2" disabled><span> Sepia2</span></label>
+            </fieldset>
+        </div>
+        <div id='container'>
+            <fieldset>
+                <span>
+                    <label> <input type="checkbox" id="brightness" disabled><span> Brightness</span></label>
+                    <input type="range" id="brightness-value" value="100" min="0" max="255" disabled style="">
+                </span>
+            </fieldset>
+        </div>
+        <div id='container'>
+            <fieldset>
+                <span><label> <input type="checkbox" id="noise" disabled><span> Noise:</span></label><br />
+                    <label><input type="range" id="noise-value" value="100" min="0" max="1000" disabled></label></span>
+            </fieldset>
+        </div>
+        <div id='container'>
+            <fieldset>
+                <span>
+                    <label> <input type="checkbox" id="remove-white" disabled><span> Remove white</span></label>
+                    <br>
+                    <div id="remove-white-ranges"><label>Threshold: <input type="range" id="remove-white-threshold" value="60" min="0" max="255" disabled></label>
+                        <br>
+                        <label>Distance: <input type="range" id="remove-white-distance" value="10" min="0" max="255" disabled></label></div>
+                </span>
+            </fieldset>
+        </div>
+        <div id='listing'>
+            <!--<output id="list"></output>-->
+        </div>
+    </div> 
+</div>
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            $("#btnSave").click(function () {
+                var form = $("#drawingForm");
+                var image = document.getElementById("c").toDataURL("image/png");
+                image = image.replace('data:image/png;base64,', '');
+                $("#imageData").val(image);
+                form.submit();
+            });
+        });
+        $(function () {
+            $("#btnCancel").click(function () {
+                window.location.replace("/Home/UploadImage");
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        (function () {
+
+            fabric.Object.prototype.transparentCorners = false;
+            fabric.Object.prototype.setControlVisible("ml", false);
+            fabric.Object.prototype.setControlVisible("mr", false);
+            fabric.Object.prototype.setControlVisible("mt", false);
+            fabric.Object.prototype.setControlVisible("mb", false);
+            var $ = function (id) { return document.getElementById(id) };
+            $('brightness-value').style.opacity = 0;
+            $('remove-white-ranges').style.opacity = 0;
+            $('noise-value').style.opacity = 0;
+
+            function applyFilter(index, filter) {
+                var obj = canvas.getActiveObject();
+                obj.filters[index] = filter;
+                obj.applyFilters(canvas.renderAll.bind(canvas));
+            }
+
+            function applyFilterValue(index, prop, value) {
+                var obj = canvas.getActiveObject();
+                if (obj.filters[index]) {
+                    obj.filters[index][prop] = value;
+                    obj.applyFilters(canvas.renderAll.bind(canvas));
+                }
+            }
+
+            fabric.Object.prototype.padding = 5;
+            fabric.Object.prototype.transparentCorners = false;
+
+            var canvas = this.__canvas = new fabric.Canvas('c'),
+                f = fabric.Image.filters;
+
+            canvas.on({
+                'object:selected': function () {
+                    fabric.util.toArray(document.getElementsByTagName('input'))
+                                        .forEach(function (el) { el.disabled = false; })
+
+                    var filters = ['grayscale', 'invert', 'remove-white', 'sepia', 'sepia2',
+                                    'brightness', 'noise'];
+
+                    for (var i = 0; i < filters.length; i++) {
+                        $(filters[i]).checked = canvas.getActiveObject().filters[i];
+                    }
+                },
+                'selection:cleared': function () {
+                    fabric.util.toArray(document.getElementsByTagName('input'))
+                                        .forEach(function (el) { el.disabled = true; })
+                }
+            });
+
+            fabric.Image.fromURL("http://res.cloudinary.com/" + "@Model.Path", function (img) {
+
+                var oImg = img.set({ left: 50, top: 100 }).scale(0.9);
+
+                canvas.add(oImg).renderAll();
+                canvas.setActiveObject(oImg);
+
+            }, { crossOrigin: "Anonymous" });
+
+
+            $('btnSave').onclick = function () {
+                canvas.item(0)['hasControls'] = false;
+                canvas.item(0)['hasBorders'] = false;
+                canvas.renderAll();
+            };
+
+            $('grayscale').onclick = function () {
+                applyFilter(0, this.checked && new f.Grayscale());
+            };
+            $('invert').onclick = function () {
+                applyFilter(1, this.checked && new f.Invert());
+            };
+            $('remove-white').onclick = function () {
+
+                if (this.checked) {
+                    $('remove-white-ranges').style.opacity = 1;
+                }
+                else {
+                    $('remove-white-ranges').style.opacity = 0;
+                }
+
+                applyFilter(2, this.checked && new f.RemoveWhite({
+                    threshold: $('remove-white-threshold').value,
+                    distance: $('remove-white-distance').value
+                }));
+            };
+            $('remove-white-threshold').onchange = function () {
+                applyFilterValue(2, 'threshold', this.value);
+            };
+            $('remove-white-distance').onchange = function () {
+                applyFilterValue(2, 'distance', this.value);
+            };
+            $('sepia').onclick = function () {
+                applyFilter(3, this.checked && new f.Sepia());
+            };
+            $('sepia2').onclick = function () {
+                applyFilter(4, this.checked && new f.Sepia2());
+            };
+            $('brightness').onclick = function () {
+                if (this.checked) {
+                    $('brightness-value').style.opacity = 1;
+                }
+                else {
+                    $('brightness-value').style.opacity = 0;
+                }
+                applyFilter(5, this.checked && new f.Brightness({
+                    brightness: parseInt($('brightness-value').value, 10)
+                }));
+            };
+            $('brightness-value').onchange = function () {
+                applyFilterValue(5, 'brightness', parseInt(this.value, 10));
+            };
+            $('noise').onclick = function () {
+
+                if (this.checked) {
+                    $('noise-value').style.opacity = 1;
+                }
+                else {
+                    $('noise-value').style.opacity = 0;
+                }
+
+                applyFilter(6, this.checked && new f.Noise({
+                    noise: parseInt($('noise-value').value, 10)
+                }));
+            };
+            $('noise-value').onchange = function () {
+                applyFilterValue(6, 'noise', parseInt(this.value, 10));
+            };
+
+        })();
+    </script>
+}
+
+

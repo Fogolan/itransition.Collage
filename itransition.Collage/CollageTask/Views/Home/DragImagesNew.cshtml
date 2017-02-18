@@ -1,0 +1,31 @@
+﻿@model IEnumerable<CollageTask.Models.Image>
+
+@if (Model.Count() > 0)
+{
+    <ul class="grid cs-style-7">
+        @for (int i = Model.Count() - 1; i >= 0; i -= 4)
+        {
+            for (int j = i; (j > i - 4) && (j >= 0); j--)
+            {
+                <li>
+                    <figure>
+                            @Html.Raw(@Html.ActionLink("{test}", "", "", new { id = Model.ElementAt(j).Id }, new { @class = "" }).ToHtmlString().Replace("{test}", "<a href=\"http://res.cloudinary.com/" + @Model.ElementAt(j).Path + "\" download><img style=\"width:220px; height:220px\" src=\"http://res.cloudinary.com/" + @Model.ElementAt(j).Path + "\"/>"))
+                        <figcaption>
+                            
+                            @using (Ajax.BeginForm("DeletePhoto", new {id = Model.ElementAt(j).Id}, new AjaxOptions {LoadingElementId = "loading"}))
+                            {
+
+                                <input type="submit" value="Delete" class="qwerty" onclick=" funcDelete() "/>
+                            }
+                        </figcaption>
+                    </figure>
+                </li>
+            }
+        }
+    </ul>
+        }
+        else
+        {
+        <h3>У этого пользователя еще нет фотографий.</h3>
+        }
+

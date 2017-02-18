@@ -1,0 +1,8 @@
+﻿@model CollageTask.Models.Collage
+@{
+    ViewBag.Title = "ShowCollage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    @Html.Raw("<img style=\"width:1280; height:720; border: 2px solid white; padding:5px; border-radius:9px; background:white;\" src=\"http://res.cloudinary.com/" + @Model.Path + "\" />")
+
